@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "[ يا عبادي الذين آمنوا ان ارضي واسعة ] كروما قران شاشه سوداء - القارئ عبدالرحمن مسعد.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
