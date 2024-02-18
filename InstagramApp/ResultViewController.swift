@@ -6,24 +6,33 @@
 //
 
 import UIKit
+import SnapKit
 
 class ResultViewController: UIViewController {
-
+    private lazy var totalResultLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.text = totalResult
+        
+        return label
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
 
-        // Do any additional setup after loading the view.
+        view.addSubview(totalResultLabel)
+        totalResultLabel.snp.makeConstraints({make in
+            make.top.equalTo(view.snp.top).offset(100)
+            make.horizontalEdges.equalTo(view.alpha)
+        })
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    public func changeTittle(name: String){
+        totalResultLabel.text = name
     }
-    */
 
 }
+
