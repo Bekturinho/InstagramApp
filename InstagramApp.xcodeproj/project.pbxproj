@@ -27,6 +27,7 @@
 		E00ECEB52B806EAE00D1DBAA /* InstaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00ECEB42B806EAE00D1DBAA /* InstaTableViewCell.swift */; };
 		E00ECEB72B807F9000D1DBAA /* instaINfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00ECEB62B807F9000D1DBAA /* instaINfo.swift */; };
 		E00ECED22B81CDA100D1DBAA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00ECED12B81CDA100D1DBAA /* ResultViewController.swift */; };
+		E00ECED42B83153800D1DBAA /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00ECED32B83153800D1DBAA /* AddPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		E00ECEB42B806EAE00D1DBAA /* InstaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTableViewCell.swift; sourceTree = "<group>"; };
 		E00ECEB62B807F9000D1DBAA /* instaINfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instaINfo.swift; sourceTree = "<group>"; };
 		E00ECED12B81CDA100D1DBAA /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E00ECED32B83153800D1DBAA /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				E00ECEAA2B7EF65900D1DBAA /* HomeViewController.swift */,
 				E00ECEAC2B7EF66B00D1DBAA /* SearchViewController.swift */,
 				E00ECEAE2B7EF69000D1DBAA /* PostViewController.swift */,
+				E00ECED32B83153800D1DBAA /* AddPostViewController.swift */,
 				E00ECEB02B7EF69F00D1DBAA /* SavedViewController.swift */,
 				E00ECEB22B7EF6B000D1DBAA /* ProfileViewController.swift */,
 				E00ECEB42B806EAE00D1DBAA /* InstaTableViewCell.swift */,
@@ -433,6 +436,7 @@
 				E00ECEAB2B7EF65900D1DBAA /* HomeViewController.swift in Sources */,
 				E00ECEAF2B7EF69000D1DBAA /* PostViewController.swift in Sources */,
 				E00ECEB72B807F9000D1DBAA /* instaINfo.swift in Sources */,
+				E00ECED42B83153800D1DBAA /* AddPostViewController.swift in Sources */,
 				E00ECEB52B806EAE00D1DBAA /* InstaTableViewCell.swift in Sources */,
 				E00ECE7D2B7EEFDC00D1DBAA /* ViewController.swift in Sources */,
 				E00ECEA92B7EF48E00D1DBAA /* MainTabBarViewController.swift in Sources */,

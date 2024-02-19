@@ -11,8 +11,8 @@ struct Options{
     var title: String
     var image: UIImage
 }
-public var totalResult = ""
-//"Сменить аватарку","Язык приложения","Конфиденциальность и безопасность","Выход из аккаунта"
+//public var totalResult = ""
+
 class ProfileViewController: UIViewController{
     private lazy var tableView = UITableView()
     
@@ -93,7 +93,7 @@ extension ProfileViewController: UITableViewDelegate{
         let resultView = ResultViewController()
         navigationController?.pushViewController(resultView, animated: true)
         let total = optionsArray[indexPath.row]
-        totalResult = total.title
-        print(totalResult)
+        resultView.changeTittle(name: total.title)
+        
     }
 }

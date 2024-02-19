@@ -28,10 +28,10 @@ class SearchViewController: UIViewController{
     
     private lazy var filteredInstaNick: [InstagramIfo] = []
     
-    private lazy var isSearching: Bool = {
+    private var isSearching: Bool {
         guard let text = instaSearchBar.text else{return false}
         return !text.isEmpty
-    }()
+    }
     
     
     private var instaInfoArray: [InstagramIfo] = [
@@ -98,11 +98,11 @@ extension SearchViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? InstaTableViewCell
-        let userInfo = instaInfoArray[indexPath.row]
+
         let nick = isSearching ? filteredInstaNick[indexPath.row] : instaInfoArray[indexPath.row]
-        cell?.textLabel?.text = nick.nickName
+        cell?.textLabel?.text = nick.nickName.lowercased()
         if let cell{
-            cell.putInfo(info: userInfo)
+            cell.putInfo(info: nick)
             return cell
         }else {
             return UITableViewCell()

@@ -14,7 +14,7 @@ class ResultViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = totalResult
+      
         
         return label
     }()
